@@ -16,6 +16,11 @@ public class Worker extends Person {
         super(idNumber, name, mail, phoneNbr, address);
     }
 
+    public Worker(int idNumber, String name, String mail, String phoneNbr, String address, int salary) {
+        super(idNumber, name, mail, phoneNbr, address);
+        this.salary = salary;
+    }
+
     public int getSalary() {
         return salary;
     }
@@ -41,6 +46,10 @@ public class Worker extends Person {
         }
         return super.equals(obj);
     }
-    
+
+    @Override
+    public String toString() {
+        return "Worker{" + "salary=" + salary + '}';
+    }
     
 }

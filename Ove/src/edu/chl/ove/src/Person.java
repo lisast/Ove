@@ -84,5 +84,10 @@ public class Person {
             return this.getIdNumber() == tmp.getIdNumber();
         }
     }
+
+    @Override
+    public String toString() {
+        return "Person{" + "idNumber=" + idNumber + ", name=" + name + ", mail=" + mail + ", phoneNbr=" + phoneNbr + ", address=" + address + '}';
+    }
     
 }
