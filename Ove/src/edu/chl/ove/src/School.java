@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Objects;
 
 /**
+ * A class representing a School.
+ * 
+ * The name of a school and the adress of a school is a unique pair. 
  *
  * @author lisastenberg
  */
@@ -16,6 +19,7 @@ public class School {
     private String name;
     private String address;
     private List<Person> contactPersons;
+    private Schedule schedule;
 
     public School(String name, String address) {
         this.name = name;
@@ -40,6 +44,10 @@ public class School {
         return contactPersons;
     }
 
+    public Schedule getSchedule() {
+        return schedule;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -50,6 +58,10 @@ public class School {
 
     public void setContactPersons(List<Person> contactPersons) {
         this.contactPersons = contactPersons;
+    }
+
+    public void setSchedule(Schedule schedule) {
+        this.schedule = schedule;
     }
 
     @Override

@@ -7,7 +7,10 @@ package edu.chl.ove.src;
 import java.util.Objects;
 
 /**
- *
+ * A class representing a User. 
+ * 
+ * A User is a person with a userName and a password. The username is unique.
+ * 
  * @author lisastenberg
  */
 public class User {

@@ -5,7 +5,10 @@
 package edu.chl.ove.src;
 
 /**
- *
+ * A class representing a Worker.
+ * 
+ * A worker is a person with a salary. 
+ * 
  * @author lisastenberg
  */
 public class Worker extends Person {

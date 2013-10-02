@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- *
+ * A class representing a schedule, which is several sessions for a specific school. 
+ * 
  * @author lisastenberg
  */
 public class Schedule {

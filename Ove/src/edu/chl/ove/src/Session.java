@@ -6,9 +6,14 @@ package edu.chl.ove.src;
 
 import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.Objects;
 
 /**
- *
+ * A class representing a Session. 
+ * 
+ * A Session has a starttime and an endtime. It also have one or more tutors,
+ * a number of students and possible a notation.
+ * 
  * @author lisastenberg
  */
 public class Session {
@@ -65,5 +70,34 @@ public class Session {
     public void setNotation(String notation) {
         this.notation = notation;
     }
-    
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 53 * hash + Objects.hashCode(this.startTime);
+        hash = 53 * hash + Objects.hashCode(this.endTime);
+        hash = 53 * hash + Objects.hashCode(this.tutors);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Session other = (Session) obj;
+        if (!Objects.equals(this.startTime, other.startTime)) {
+            return false;
+        }
+        if (!Objects.equals(this.endTime, other.endTime)) {
+            return false;
+        }
+        if (!Objects.equals(this.tutors, other.tutors)) {
+            return false;
+        }
+        return true;
+    }
 }

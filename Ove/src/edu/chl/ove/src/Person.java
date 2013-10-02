@@ -5,7 +5,10 @@
 package edu.chl.ove.src;
 
 /**
- *
+ * A class representing a Person
+ * 
+ * The id number of a person is unique.
+ * 
  * @author lisastenberg
  */
 public class Person {
