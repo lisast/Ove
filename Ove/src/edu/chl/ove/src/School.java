@@ -6,7 +6,6 @@ package edu.chl.ove.src;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.logging.Logger;
 
 /**
  *
