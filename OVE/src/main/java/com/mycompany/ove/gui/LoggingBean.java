@@ -54,7 +54,7 @@ public class LoggingBean implements Serializable{
             loggedIn = false;  
             msg = new FacesMessage(FacesMessage.SEVERITY_WARN, "Login Error", "Invalid credentials");  
         }  
-          
+        
         FacesContext.getCurrentInstance().addMessage(null, msg);  
         context.addCallbackParam("loggedIn", loggedIn);  
     }  

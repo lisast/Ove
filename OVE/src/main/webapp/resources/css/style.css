@@ -32,6 +32,14 @@ h2{
     font-size: 100px;
 }
 
+h3{
+     margin-left: 1em;
+    vertical-align: middle;
+    font-size: 80px;
+}
+
+
+
 /* Colort for rows in table (alternating) */
 tr:nth-child(odd) { background-color:#fff; }
 tr:nth-child(even) { background-color:#eee; }
