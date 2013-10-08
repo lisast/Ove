@@ -26,9 +26,10 @@ and open the template in the editor.
 
                 
                 <p:layoutUnit position="center" >
+                    <div align="center">
                     <h:graphicImage url="#{resource['img:banner.jpg']}" />
                     <h:form> 
-                        <p:menubar styleClass="menubar" style="width: 1054px">
+                        <p:menubar styleClass="menubar" >
 
                             <p:menuitem value="MyPage" outcome="MyPage"/>
                         <p:submenu label="Schools">
@@ -46,15 +47,16 @@ and open the template in the editor.
                     </p:menubar>
                     </h:form>
                 <ui:insert name="content">Put default content here, if any.</ui:insert>
+                </div>
             </p:layoutUnit>
-
+                
                 <p:layoutUnit  position="west" size="70"  resizable="false" closable="false" collapsible="false">
            </p:layoutUnit>
                 
                 <p:layoutUnit position="east" size="70"  resizable="false" closable="false" collapsible="false">
                 </p:layoutUnit>
      
-                <p:layoutUnit position="south" size="50" resizable="false" closable="false" collapsible="false">
+                <p:layoutUnit position="south" size="20" resizable="false" closable="false" collapsible="false">
                     This is a footer
                 </p:layoutUnit>
             </p:layout>
