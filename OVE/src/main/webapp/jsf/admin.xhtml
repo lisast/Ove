@@ -15,7 +15,36 @@ and open the template in the editor.
     <h:body>
         <ui:composition template="/WEB-INF/template.xhtml">
             <ui:define name="content"> 
-                
+     <h:form id="form">  
+  
+    <p:growl id="messages" showDetail="true" />  
+  
+    <p:schedule id="schedule" value="#{scheduleBean.eventModel}" widgetVar="myschedule">  
+  
+        <p:ajax event="dateSelect" listener="#{scheduleBean.onDateSelect}" update="eventDetails" oncomplete="eventDialog.show()" />  
+        <p:ajax event="eventSelect" listener="#{scheduleBean.onEventSelect}" update="eventDetails" oncomplete="eventDialog.show()" />  
+        <p:ajax event="eventMove" listener="#{scheduleBean.onEventMove}" update="messages" />  
+        <p:ajax event="eventResize" listener="#{scheduleBean.onEventResize}" update="messages" />  
+  
+    </p:schedule>  
+  
+    <p:dialog widgetVar="eventDialog" header="Event Details" showEffect="clip" hideEffect="clip">  
+    <h:panelGrid id="eventDetails" columns="2">
+        <h:outputLabel for="title" value="Title"/>
+        <p> </p>
+        
+        <h:outputLabel for="position" value="Position"/>
+        <p:inputText/>
+        
+        <h:outputLabel for="time" value="Time"/>
+        <p:inputText/>
+        
+        <h:outputLabel for="comments" value="Comments"/>
+        <p:inputTextarea rows="10" cols="50" value="#{scheduleBean.event.}"/>
+        </h:panelGrid>  
+    </p:dialog>  
+  
+</h:form>  
                 
                 
             </ui:define>
