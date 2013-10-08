@@ -24,12 +24,12 @@ and open the template in the editor.
                 
             <p:layout fullPage="true">
 
-             
                 
                 <p:layoutUnit position="center" >
                     <h:graphicImage url="#{resource['img:banner.jpg']}" />
                     <h:form> 
                         <p:menubar styleClass="menubar" style="width: 1054px">
+
                             <p:menuitem value="MyPage" outcome="MyPage"/>
                         <p:submenu label="Schools">
                             <p:menuitem value="School 1"  />
@@ -38,7 +38,7 @@ and open the template in the editor.
                             <p:menuitem value="School 4"  />
                         </p:submenu>
                         <p:menuitem value="Tutors"/>
-                        <p:menuitem value="Admin"/>
+                        <p:menuitem value="Admin" outcome="Admin" />
                         
                         <f:facet name="options"> 
                          <p:commandButton style="margin-left: 200px" type="button" value="Logout" icon="ui-icon-extlink" />  
