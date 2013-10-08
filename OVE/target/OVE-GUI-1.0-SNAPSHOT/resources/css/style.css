@@ -55,9 +55,6 @@ thead {
 table, thead, td {
     /*background-color: blue;*/
     border-width: 1px;
-    border-collapse: collapse;
-    border-style: solid;
-    padding: 0px;
 }
 
 .warning{

@@ -22,7 +22,7 @@
         </navigation-case>
         <navigation-case>
             <from-outcome>MyPage</from-outcome>
-            <to-view-id>/jsf/login.xhtml</to-view-id>
+            <to-view-id>/jsf/mypage.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>Schools</from-outcome>
